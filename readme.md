@@ -1,4 +1,6 @@
-# Install docker and docker compose for ubuntu
+# Docker configuration for IBM courses
+
+## Install docker and docker compose for ubuntu
 
 Install curl
 ```sudo apt update && sudo apt upgrade```
@@ -40,7 +42,7 @@ Install docker compose
 
 ``` sudo chmod +x /usr/local/bin/docker-compose```
 
-# architecture
+## Architecture
 
 ```
 IBM
@@ -54,7 +56,7 @@ IBM
 |-- |-- jupyter_dockerfile
 ```
 
-# Launch the notebook
+## Launch the notebook
 
 Run command with cocker compose
 
@@ -81,7 +83,7 @@ and stop and remove the container with
 
 ``` sudo docker stop cont_ibm_course3 ``` 
 
-# Launch the notebook
+## Launch the notebook
 
 Access notebook through the browser address
 localhost:8888
