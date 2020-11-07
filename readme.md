@@ -83,7 +83,7 @@ and stop and remove the container with
 
 ``` sudo docker stop cont_ibm_course3 ``` 
 
-## Launch the notebook
+## Access the notebook
 
 Access notebook through the browser address
 localhost:8888
