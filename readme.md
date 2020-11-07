@@ -3,11 +3,13 @@
 ## Install docker and docker compose for ubuntu
 
 Install curl
+
 ```sudo apt update && sudo apt upgrade```
 
 ```sudo apt install curl```
 
 Install docker 
+
 ```sudo apt-get remove docker docker-engine docker.io containerd runc```
 
 ```
