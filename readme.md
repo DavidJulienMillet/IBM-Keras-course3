@@ -2,6 +2,7 @@
 
 Install curl
 ```sudo apt update && sudo apt upgrade```
+
 ```sudo apt install curl```
 
 Install docker 
@@ -26,6 +27,7 @@ sudo add-apt-repository \
 ```
 
 Install the docker engine
+
 ``` sudo apt-get update ```
 
 ``` sudo apt-get install docker-ce docker-ce-cli containerd.io ```
@@ -33,12 +35,14 @@ Install the docker engine
 ``` sudo docker run hello-world ``` 
 
 Install docker compose
+
 ```sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose ```
 
 ``` sudo chmod +x /usr/local/bin/docker-compose```
 
 # architecture
 
+```
 IBM
 |-- readme.md
 |-- docker-compose.yml
@@ -48,16 +52,21 @@ IBM
 |-- |-- jupyter_password
 |-- dockerfiles
 |-- |-- jupyter_dockerfile
+```
 
 # Launch the notebook
 
 Run command with cocker compose
+
 ``` docker-compose up -d ```
+
 Stop and remove the container with
+
 ``` docker-compose down ``` 
 
 
 or directly with docker
+
 ``` 
 sudo docker run \
 --rm \
@@ -69,6 +78,7 @@ sudo docker run \
 img_ibm_jupyter
 ```
 and stop and remove the container with
+
 ``` sudo docker stop cont_ibm_course3 ``` 
 
 # Launch the notebook
