@@ -1,0 +1,6 @@
+# Base image
+FROM python:3.8.5-slim-buster
+
+# Define jupyter token with credentials and specified port
+COPY ./docker_entrypoints/jupyter_entrypoint.sh /jupyter_entrypoint.sh
+ENTRYPOINT ["/jupyter_entrypoint.sh"] 
