@@ -1,18 +1,33 @@
 version: '3.7'
 services:
 
+  ibm_course2: 
+    build:
+      context: ./
+      dockerfile: dockerfiles/jupyter_dockerfile
+    image: img_ibm_jupyter
+    container_name: cont_ibm2
+    environment:
+      CONT_PORT: 8882
+    ports:
+      - "8882:8882"
+    volumes:
+      - ./docker_volumes/course2_spark:/project
+    secrets:
+      - sec_jupyter
+
   ibm_course3: 
     build:
       context: ./
       dockerfile: dockerfiles/jupyter_dockerfile
     image: img_ibm_jupyter
-    container_name: cont_ibm_course3
+    container_name: cont_ibm3
     environment:
-      CONT_PORT: 8888
+      CONT_PORT: 8883
     ports:
-      - "8888:8888"
+      - "8883:8883"
     volumes:
-      - ./docker_volumes/course3:/project
+      - ./docker_volumes/course3_keras/project
     secrets:
       - sec_jupyter
 
@@ -21,16 +36,31 @@ services:
       context: ./
       dockerfile: dockerfiles/jupyter_dockerfile
     image: img_ibm_jupyter
-    container_name: cont_ibm_course4
+    container_name: cont_ibm4
     environment:
-      CONT_PORT: 8889
+      CONT_PORT: 8884
     ports:
-      - "8889:8889"
+      - "8884:8884"
     volumes:
-      - ./docker_volumes/course4:/project
+      - ./docker_volumes/course4_pytorch:/project
     secrets:
       - sec_jupyter
-      
+
+  ibm_course5: 
+    build:
+      context: ./
+      dockerfile: dockerfiles/jupyter_dockerfile
+    image: img_ibm_jupyter
+    container_name: cont_ibm5
+    environment:
+      CONT_PORT: 8885
+    ports:
+      - "8885:8885"
+    volumes:
+      - ./docker_volumes/course5_tensorflow:/project
+    secrets:
+      - sec_jupyter
+
 secrets:
   sec_jupyter:
     file: docker_passwords/jupyter_password.txt

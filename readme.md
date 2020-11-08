@@ -49,9 +49,9 @@ IBM
 |-- readme.md
 |-- docker-compose.yml
 |-- docker_entrypoints
-|-- |-- jupyter_entrypoint
+|-- |-- jupyter_entrypoint.sh
 |-- docker_passwords
-|-- |-- jupyter_password
+|-- |-- jupyter_password.txt
 |-- dockerfiles
 |-- |-- jupyter_dockerfile
 
@@ -68,7 +68,9 @@ IBM
 
 ## Launch the notebook
 
-Run command with cocker compose
+Change the file IBM/docker_passwords/jupyter_password.txt.example to jupyter_password.txt, changing the password you want for jupyter token.
+
+Run command with cdcker compose
 
 ``` docker-compose up -d ```
 
@@ -77,29 +79,35 @@ Stop and remove the container with
 ``` docker-compose down ``` 
 
 
-or directly with docker
+or directly with docker run
 
 ``` 
 sudo docker run \
 --rm \
 --volume ~/Desktop/IBM/docker_passwords/jupyter_password.txt:/run/secrets/sec_jupyter \
 --volume ~/Desktop/IBM/docker_volumes/course3:/project \
---name cont_ibm_course3 -d \
---env CONT_PORT=8888 \
---publish 8888:8888 \
+--name cont_ibm3 -d \
+--env CONT_PORT=8883 \
+--publish 8883:8883 \
 img_ibm_jupyter
 ```
 and stop and remove the container with
 
-``` sudo docker stop cont_ibm_course3 ``` 
+``` sudo docker stop cont_ibm3 ``` 
 
 ## Access the notebook
 
-Access notebook of the course 3 through the browser address
-localhost:8888
+Access notebook of the course 2 concerning spark through the browser address
+localhost:8882
 
-Access notebook ofthe course 4 through the browser address
-localhost:8889
+Access notebook of the course 3 concerning keras through the browser address
+localhost:8883
+
+Access notebook of the course 4 concerning pytorch through the browser address
+localhost:8884
+
+Access notebook of the course 5 concerning tensorflow through the browser address
+localhost:8885
 
 And make identification with the password you wrote in
 IBM/docker_passwords/jupyter_password.txt

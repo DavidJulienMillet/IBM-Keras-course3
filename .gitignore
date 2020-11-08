@@ -1,4 +1,9 @@
-docker_volumes/course3/venv/
-docker_volumes/course3/.ipynb_checkpoints/
-docker_volumes/course4/venv/
-docker_volumes/course4/.ipynb_checkpoints/
+docker_volumes/course2_spark/venv/
+docker_volumes/course2_spark/.ipynb_checkpoints/
+docker_volumes/course3_keras/venv/
+docker_volumes/course3_keras/.ipynb_checkpoints/
+docker_volumes/course4_pytorch/venv/
+docker_volumes/course4_pytorch/.ipynb_checkpoints/
+docker_volumes/course5_tensorflow/venv/
+docker_volumes/course5_tensorflow/.ipynb_checkpoints/
+docker_passwords/jupyter_password.txt
