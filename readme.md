@@ -54,6 +54,15 @@ IBM
 |-- |-- jupyter_password
 |-- dockerfiles
 |-- |-- jupyter_dockerfile
+|-- docker_volumes
+|-- |-- course3
+|-- |-- |-- requirements.txt
+|-- |-- |-- venv/
+|-- |-- |-- notebooks
+|-- |-- course4
+|-- |-- |-- requirements.txt
+|-- |-- |-- venv/
+|-- |-- |-- notebooks
 ```
 
 ## Launch the notebook
@@ -85,8 +94,11 @@ and stop and remove the container with
 
 ## Access the notebook
 
-Access notebook through the browser address
+Access notebook of the course 3 through the browser address
 localhost:8888
+
+Access notebook ofthe course 4 through the browser address
+localhost:8889
 
 And make identification with the password you wrote in
 IBM/docker_passwords/jupyter_password.txt
