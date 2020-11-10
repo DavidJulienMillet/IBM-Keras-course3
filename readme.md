@@ -98,15 +98,19 @@ and stop and remove the container with
 ## Access the notebook
 
 Access notebook of the course 2 concerning spark through the browser address
+
 localhost:8882
 
 Access notebook of the course 3 concerning keras through the browser address
+
 localhost:8883
 
 Access notebook of the course 4 concerning pytorch through the browser address
+
 localhost:8884
 
 Access notebook of the course 5 concerning tensorflow through the browser address
+
 localhost:8885
 
 And make identification with the password you wrote in

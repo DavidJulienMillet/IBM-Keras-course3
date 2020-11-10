@@ -1,6 +1,12 @@
 # Base image
 FROM python:3.8.5-slim-buster
 
+# Install wget and unzip
+RUN apt-get update -y \
+&&  apt-get upgrade -y \
+&&  apt-get install -y wget zip unzip \
+&&  rm -rf /var/lib/apt/lists/* 
+
 # Define jupyter token with credentials and specified port
 COPY ./docker_entrypoints/jupyter_entrypoint.sh /jupyter_entrypoint.sh
 ENTRYPOINT ["/jupyter_entrypoint.sh"] 

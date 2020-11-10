@@ -27,7 +27,7 @@ services:
     ports:
       - "8883:8883"
     volumes:
-      - ./docker_volumes/course3_keras/project
+      - ./docker_volumes/course3_keras:/project
     secrets:
       - sec_jupyter
 
