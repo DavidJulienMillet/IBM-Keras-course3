@@ -3,8 +3,8 @@ docker_volumes/course2_spark/.ipynb_checkpoints/
 docker_volumes/course2_spark/__pycache__/
 docker_volumes/course3_keras/venv/
 docker_volumes/course3_keras/.ipynb_checkpoints/
-!docker_volumes/course3_keras/data/concrete_data.csv
 docker_volumes/course3_keras/data/
+!docker_volumes/course3_keras/data/concrete_data.csv
 docker_volumes/course3_keras/models/
 docker_volumes/course3_keras/__pycache__/
 docker_volumes/course4_pytorch/venv/
