@@ -4,8 +4,8 @@ services:
   ibm_course2: 
     build:
       context: ./
-      dockerfile: dockerfiles/jupyter_dockerfile
-    image: img_ibm_jupyter
+      dockerfile: dockerfiles/jupyter_spark_dockerfile
+    image: img_ibm_jupyter_spark
     container_name: cont_ibm2
     environment:
       CONT_PORT: 8882
